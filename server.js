@@ -9,6 +9,8 @@ if (process.env.NODE_ENV !== 'production') {
   const passport = require('passport')
   const flash = require('express-flash')
   const session = require('express-session')
+  const fs= require('fs')
+
   initializePassport(
     passport,
     email => users.find(user => user.email === email),
@@ -16,7 +18,16 @@ if (process.env.NODE_ENV !== 'production') {
   )
   
 
-  const users = []
+  const users = [
+    [
+      {
+        id: '1639329964426',
+        name: 'Rajesh Sharma',
+        email: 'shukla.ritu@gmail.com',
+        password: '$2b$10$cCm3N6BtaztMu2yE4MD3m.yxWM0vOP3gbBhnOsbFntPX9WIo8hjR2'
+      }
+    ]
+  ]
   
   app.set('view-engine', 'ejs')
   app.use(express.urlencoded({extended:false}))
@@ -87,7 +98,6 @@ if (process.env.NODE_ENV !== 'production') {
         email:req.body.email,
         password:hashedPassword
       })
-      res.redirect('/login')
     }catch{
       res.redirect('/register')
     }

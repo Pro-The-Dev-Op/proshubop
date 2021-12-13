@@ -1,0 +1,36 @@
+.btn-big-red {
+    background-color: #c63702;
+    background-image: linear-gradient(167deg, rgba(255, 255, 255, 0.1) 50%, rgba(0, 0, 0, 0) 55%), linear-gradient(top, rgba(255, 255, 255, 0.15), rgba(0, 0, 0, 0));
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #ad3002, 0 8px 0 1px rgba(0, 0, 0, 0.4), 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: inline-block;
+    font-family: "Lucida Grande", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    height: 45px;
+    letter-spacing: -1px;
+    line-height: 45px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    text-decoration: none !important;
+   transition:0.15s;
+  
+    top: 0;
+    width: 15%;
+  }
+  .btn-big-red:hover, .btn-big-red:focus {
+    background-color: #d13902;
+    box-shadow: 0 0 0 1px #c63702 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 10px 0 0 #ad3002, 0 10px 0 1px rgba(0, 0, 0, 0.4), 0 10px 8px 1px rgba(0, 0, 0, 0.6);
+    top: -2px;
+  
+  }
+  .btn-big-red:active {
+    box-shadow: 0 0 0 1px #ad3002 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
+    transform:translateY(10px);
+  }
+  .btngaps{
+    margin-right: 10px;
+  }

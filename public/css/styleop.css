@@ -208,9 +208,9 @@ html {
     font-family: "Lucida Grande", Arial, sans-serif;
     font-size: 22px;
     font-weight: bold;
-    height: 40px;
+    height: 35px;
     letter-spacing: -1px;
-    line-height: 40px;
+    line-height: 35px;
     margin: 30px 0 10px;
     position: relative;
     text-align: center;
@@ -231,5 +231,11 @@ html {
     box-shadow: 0 0 0 1px #ad3002 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 0 0 1px rgba(0, 0, 0, 0.4);
     transform:translateY(10px);
   }
-  
-    
+  .centerdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btngaps{
+    margin-right: 10px;
+  }
