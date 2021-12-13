@@ -5,7 +5,7 @@
   "main": "passport-config.js",
   "scripts": {
     "test": "nodemon server.js",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "serve": "nodemon server.js"
   },
   "author": "",
