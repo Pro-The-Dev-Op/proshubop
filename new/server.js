@@ -10,6 +10,7 @@ if (process.env.NODE_ENV !== 'production') {
   const flash = require('express-flash')
   const session = require('express-session')
   const fs= require('fs')
+  const port= process.env.PORT || 5000
 
   initializePassport(
     passport,
