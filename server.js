@@ -11,6 +11,7 @@ if (process.env.NODE_ENV !== 'production') {
   const session = require('express-session')
   const fs= require('fs')
   const port= process.env.PORT || 5000
+  const router=express.router()
 
   initializePassport(
     passport,
@@ -118,6 +119,7 @@ if (process.env.NODE_ENV !== 'production') {
     }
     next()
   }
+  app.use("/.netlify/functions/api", router);
   
 
   app.listen(3000)
