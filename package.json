@@ -7,7 +7,7 @@
     "test": "nodemon new/server.js",
     "start": "netlify-lambda serve views",
     "serve": "nodemon new/server.js",
-    "build": "/node_modules/.bin/netlify-lambda build views"
+    "build": "./node_modules/.bin/netlify-lambda build views"
   },
   "author": "",
   "license": "ISC",
